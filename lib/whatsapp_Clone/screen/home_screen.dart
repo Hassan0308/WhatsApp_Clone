@@ -45,6 +45,16 @@ class _HomeScreenState extends State<HomeScreen>
           ],
         ),
       ),
+      body: TabBarView(
+        controller: _controller,
+        children: [
+          Text("Groups"),
+          Text("Chats"),
+          Text("Status"),
+          Text("Calls"),
+
+        ],
+      ),
     );
   }
 }
